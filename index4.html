@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="/submit_form.html" method="get">
+        <!-- Text Input -->
+        <label for="fName">Ad:</label>
+        <input type="text" id="fName" name="fName" required><br><br>
+
+        <label for="lName">Soyad:</label>
+        <input type="text" id="lName" name="lName" required><br><br>
+
+        <!-- E-mail Input -->
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password Input -->
+        <label for="pwd">Şifre:</label>
+        <input type="password" id="pwd" name="pwd" minlength="8"  required><br><br>
+      
+        <!-- Gender Input -->
+        <label>Cinsiyet:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kadın</label><br><br>
+
+        <!-- Select Input -->
+        <label for="favoriteFruit">Favori Meyve:</label>
+        <select id="favoriteFruit" name="favoriteFruit">
+            <option value="elma">Elma</option>
+            <option value="muz">Muz</option>
+            <option value="çilek">Çilek</option>
+            <option value="ananas">Ananas</option>
+            <option value="kayısı">Kayısı</option>
+            <option value="portakal">Portakal</option>
+            <option value="mandalina">Mandalina</option>
+            <option value="kivi">Kivi</option>
+        </select><br><br>
+
+        <label for="message">Eklemek istedikleriniz:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
